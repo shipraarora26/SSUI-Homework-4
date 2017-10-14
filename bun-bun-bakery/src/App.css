@@ -1,28 +1,123 @@
-.App {
+
+/*common to all pages*/
+body {
   text-align: center;
+  margin: auto;
+  /*background: url(../resources/images/background.jpg);*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+body:before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: .76;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+h1 {
+  margin: 20px 0 0 0;
+  font-family: Montez-Regular;
+  font-size: 45px;
+  color: #FFFFFF;
+}
+
+span {
+  display: block;
+    font-family: AvenirNext-UltraLight;
+    color: white;
+    font-size: 15px;
+}
+
+button {
+  background: rgba(192,192,192,0.5);
+  font-family: AvenirNext-UltraLight;
+  color: #FFFFFF;;
+  font-size: 17px;
+  padding: 5px 10px;
+  margin: 10px;
+  border: none;
+}
+
+svg#logo {
+  display: inline;
+  float: left;
+  padding: 15px;
+  height: 35px;
+  width: auto;
+  cursor: pointer;
+}
+
+/*welcome page*/
+.welcome {
+  margin: 100px 0 0 0;
+}
+
+.welcomeText {
+  margin: 50px 30%;
+  font-size: 17px;
+}
+
+/*menu items*/
+.items {
+  padding: 10px;
+  text-align: center;
+  font-family: AvenirNext-Regular;
   color: white;
+  font-size: 18px;
 }
 
-.App-title {
-  font-size: 1.5em;
+.flavor {
+  border: solid 1px;
+  display: inline-block;
+  width: 20%;
+  margin: 20px;
+  cursor: pointer;
 }
 
-.App-intro {
-  font-size: large;
+.flavorImg {
+  padding: 15px 0;
+  width: 100%;
+  height: 165px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+/*contact us page*/
+h2 {
+  margin: 0;
+  font-family: AvenirNext-Regular;
+  font-weight: normal;
+  font-size: 17px;
+  color: #FFFFFF;
+}
+
+.contactUs {
+  float: left;
+  text-align: left;
+  margin: 25px 0px 25px 70px;
+  width: 40%;
+}
+
+.contactInfo {
+  display: inline-block;
+  margin: 0 0 15px 0;
+}
+
+.openingHours {
+  display: inline-block;
+  float: right;
+  margin: 25px 70px 25px 25px;
+  width: 30%;
+  text-align: left;
+}
+
+.map {
+  width: 95%;
+  margin: 20px 0;
 }
