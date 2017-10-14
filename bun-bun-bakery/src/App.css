@@ -3,7 +3,7 @@
 body {
   text-align: center;
   margin: auto;
-  /*background: url(../resources/images/background.jpg);*/
+  background: url(/images/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
