@@ -1,3 +1,11 @@
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li { display: inline; }
+
 .navContainer {
 	background: rgba(192,192,192,0.3);
 	margin: 15px 0;
@@ -26,23 +34,19 @@
 	padding-bottom: 2px;
 }
 
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
+.navLinksRight {
+  float: right;
 }
 
-li { display: inline; }
+.navLinksRight a {
+	cursor: pointer;
+}
 
 svg#shoppingCart {
 	display: inline;
 	height: 23px;
 	width: auto;
 	cursor: pointer;
-}
-
-#navLinksRight {
-  float: right;
 }
 
 span#shoppingCartValue {

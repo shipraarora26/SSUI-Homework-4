@@ -57,6 +57,12 @@ class App extends Component {
     this.render()
   }
 
+  isActiveClass(target) {
+    if (this.state.displayPage == target) {
+      return 'activeNav'
+    }
+  }
+
   getComponent() {
     if (this.state.displayPage == 'ProductMenu') {
       return <ProductMenu />;
@@ -73,10 +79,10 @@ class App extends Component {
       return <ErrorPage />;
     }
   }
-  
+
   displayHeader() {
     return (
-      <div class="navContainer">
+      <div className="navContainer">
         <ul>
           <svg onClick={() => this.goHome() } id="logo" height="30px" viewBox="0 0 279 41">
             <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -95,10 +101,10 @@ class App extends Component {
             </g>
           </svg>
 
-          <div id="navLinksRight">
-            <li><a onClick={() => this.goHome() }>Home</a></li>
-            <li><a onClick={() => this.goProductMenu() }>Menu</a></li>
-            <li><a onClick={() => this.goContactUs() }>Contact Us</a></li>
+          <div className="navLinksRight">
+            <li><a className={this.isActiveClass('HomePage')} onClick={() => this.goHome() }>Home</a></li>
+            <li><a className={this.isActiveClass('ProductMenu')} onClick={() => this.goProductMenu() }>Menu</a></li>
+            <li><a className={this.isActiveClass('ContactUs')} onClick={() => this.goContactUs() }>Contact Us</a></li>
 
             <li><a onClick={() => this.goShoppingCart() }>
             <svg className="shoppingCartIcon">
