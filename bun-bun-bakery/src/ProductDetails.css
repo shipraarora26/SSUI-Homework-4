@@ -1,0 +1,31 @@
+.productDes {
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+	font-family: AvenirNext-Regular;
+	color: white;
+	font-size: 18px;
+}
+
+.flavorDes {
+	border: solid 1px;
+	display: inline-block;
+	margin: 20px;
+}
+
+.flavorDesImg {
+	padding: 25px;
+	height: 165px;
+	float: left;
+}
+
+.description {
+	font-family: AvenirNext-UltraLight;
+	color: white;
+	margin: 40px 20px;
+}
+
+.leftDes {
+	float: left;
+	padding: 0 0 15px 0;
+}

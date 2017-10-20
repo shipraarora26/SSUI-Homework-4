@@ -8,7 +8,6 @@ import ShoppingCart from './ShoppingCart';
 
 import './Header.css';
 
-
 class Header extends Component {
   isActiveClass(target) {
     if (this.props.displayPage === target) {

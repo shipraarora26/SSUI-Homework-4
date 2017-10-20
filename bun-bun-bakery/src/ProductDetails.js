@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Header from './Header';
 
+import './ProductDetails.css';
+
 class ProductDetails extends Component {
   addToCart(item) {
     var quantity
