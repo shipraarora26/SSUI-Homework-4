@@ -130,3 +130,15 @@ h2 {
   width: 95%;
   margin: 20px 0;
 }
+
+/*Shopping Cart Page*/
+.checkout {
+  float: right;
+  margin: 0 25px 0 100%;
+}
+
+.total {
+  float: right;
+  width: 14%;
+  margin: 0 0 10px 100%;
+}

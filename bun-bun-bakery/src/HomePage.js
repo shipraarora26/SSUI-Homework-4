@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import Header from './Header';
 import ProductMenu from './ProductMenu';
 
-
 class HomePage extends Component {
   goProductMenu() {
     ReactDOM.render(<ProductMenu displayPage="ProductMenu" />, document.getElementById('app'));

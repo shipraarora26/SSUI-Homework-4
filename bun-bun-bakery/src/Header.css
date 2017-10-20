@@ -62,8 +62,3 @@ span#shoppingCartValue {
   margin-bottom: 5px;
   vertical-align: middle;
 }
-
-.checkout {
-	float: right;
-    margin: 0 25px 0 100%;
-}

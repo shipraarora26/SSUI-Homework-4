@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+
 import Header from './Header';
 import Products from './products.json';
 import ProductPreview from './ProductPreview';
+import HomePage from './HomePage';
 
 class ShoppingCart extends Component {
   getOrderTotal() {
@@ -14,6 +17,12 @@ class ShoppingCart extends Component {
     });
 
     return total;
+  }
+
+  end() {
+    alert("This is the end of my prototype! You shopping cart is being reset! Better luck buying your cinnamon rolls next time!");
+    localStorage.clear();
+    ReactDOM.render(<HomePage displayPage="HomePage" />, document.getElementById('app'));
   }
 
   render() {
@@ -32,13 +41,13 @@ class ShoppingCart extends Component {
 
     var id = 0
     return <div className="ShoppingCartContainer">
-            <Header displayPage="ShoppingCart" />
+            <Header displayPage="ShoppingCart" /> 
             <h1>Your Shopping Cart</h1>
-            <button className="checkout" onClick={() => this.getOrderTotal()}>Checkout</button>
+            <span className="total">Order Total: ${this.getOrderTotal()}</span>
+            <button className="checkout" onClick={() => this.end()}>Checkout</button>
             <div className="items" id="checkoutCart">
               {arr.map(item => <ProductPreview key={id++} name={item.name} price={item.price} imagePath={item.imagePath} description={item.description} quantity={localStorage.getItem(item.name)} itemTotal={(item.price * localStorage.getItem(item.name))}/>)}
             </div>
-            <h1>Order Total: ${this.getOrderTotal()}</h1>
           </div>
   }
 }
