@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-// import {Image} from 'react';
+import Header from './Header';
 
-class ContactUs extends React.Component {
+class ContactUs extends Component {
   render() {
     return (
         <div className="ContactUsContainer">
+            <Header displayPage="ContactUs" />
 	 		<h1>Contact Us</h1>
 
 		    <div className="contactUs">
@@ -20,7 +21,7 @@ class ContactUs extends React.Component {
 		      <span>Sat-Sun: 12PM - 4PM</span>
 		    </div>
 
-	     	<img className="map" src="/images//map.png"></img>
+	     	<img className="map" src="/images//map.png" alt=""></img>
         </div>
     );
   }

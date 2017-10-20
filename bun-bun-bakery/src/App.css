@@ -1,4 +1,5 @@
 
+
 /*common to all pages*/
 body {
   text-align: center;
@@ -66,6 +67,14 @@ svg#logo {
 }
 
 /*menu items*/
+.shoppingCartItems {
+  padding: 10px;
+  text-align: center;
+  font-family: AvenirNext-Regular;
+  color: white;
+  font-size: 18px;
+}
+
 .items {
   padding: 10px;
   text-align: center;
