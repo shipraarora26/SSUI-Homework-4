@@ -4,13 +4,15 @@
   float: right;
   position: fixed;
   overflow: scroll;
-  border: solid;
-  border-radius: 10px;
-  background: gray;
   min-width: 498px;
   max-width: 600px;
   min-height: 10%;
   max-height: 80%;
+
+  cursor: default;
+  border: solid;
+  border-radius: 10px;
+  background: gray;
   text-align: center;
 }
 
@@ -19,6 +21,7 @@
 }
 
 .total {
+  margin: 0 0 -20px 0;
   font-size: 18px;
 }
 
@@ -78,7 +81,5 @@
 
 .itemRemove {
   cursor: pointer;
-  position: relative;
   float: right;
-  z-index: 100;
 }

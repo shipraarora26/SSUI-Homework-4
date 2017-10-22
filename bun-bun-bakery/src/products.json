@@ -2,105 +2,105 @@
   {
     "imagePath": "/images/bacon.jpg",
     "name": "Bacon",
-    "price": 5.55,
+    "price": 5.00,
     "description": "Two breakfast favorites, bacon and cinnamon rolls, combined into your NEW favorite! The smoky bacon, melting into the chewy flesh of the cinnamon roll, all topped with that sweet drizzle of icing…it all blends into a single glorious, indulgent, totally non-virtuous treat. No, it’s not health food. But if you’re going to be bad, you might as well make the most of it."
   },
 
   {
     "imagePath": "/images/birthday.jpg",
     "name": "Birthday Cake",
-    "price": 5.55,
+    "price": 5.00,
     "description": "Love birthdays and cinnamon rolls? Both combined into your NEW favorite! Sprinkles, melting into the chewy flesh of the cinnamon roll, all topped with that sweet drizzle of icing…it all blends into a single glorious, indulgent, totally non-virtuous treat. No, it’s not health food. But if you’re going to be bad, you might as well make the most of it. "
   },
 
   {
     "imagePath": "/images/blackberry.jpg",
     "name": "Blackberry",
-    "price": 5.55,
+    "price": 5.00,
     "description": "Blackberry's and cinnamon rolls, combined into your NEW favorite! Fresh blackberries, melting into the chewy flesh of the cinnamon roll, all topped with that sweet drizzle of icing…it all blends into a single glorious, indulgent, totally non-virtuous treat. No, it’s not health food. But if you’re going to be bad, you might as well make the most of it. "
   },
 
   {
     "imagePath": "/images/buttermilk.jpg",
     "name": "Buttermilk",
-    "price": 5.55,
+    "price": 5.00,
     "description": "Fresh buttermilk, melting into the chewy flesh of the cinnamon roll, all topped with that sweet drizzle of icing…it all blends into a single glorious, indulgent, totally non-virtuous treat. No, it’s not health food. But if you’re going to be bad, you might as well make the most of it."
   },
 
   {
     "imagePath": "/images/caramelPecan.jpg",
    "name": "Caramel Pecan",
-    "price": 5.55,
+    "price": 5.00,
     "description": "Holiday favorites, caramel and pecan rolls, combined into your NEW favorite! The pecan bacon, melting into the chewy flesh of the cinnamon roll, all topped with that sweet drizzle of caramel…it all blends into a single glorious, indulgent, totally non-virtuous treat. No, it’s not health food. But if you’re going to be bad, you might as well make the most of it."
   },
 
   {
     "imagePath": "/images/carrotCake.jpg",
     "name": "Carrot Cake",
-    "price": 5.55,
+    "price": 5.00,
     "description": "Who doesn't love Carrot Cakes! Delicious carrot cake, melting into the chewy flesh of the cinnamon roll, all topped with that sweet drizzle of icing…it all blends into a single glorious, indulgent, totally non-virtuous treat. No, it’s not health food. But if you’re going to be bad, you might as well make the most of it. "
   },
 
   {
     "imagePath": "/images/cranberry.jpg",
     "name": "Cranberry",
-    "price": 5.55,
+    "price": 5.00,
     "description": " Fresh Cranberries, melting into the chewy flesh of the cinnamon roll, all topped with that sweet drizzle of icing…it all blends into a single glorious, indulgent, totally non-virtuous treat. No, it’s not health food. But if you’re going to be bad, you might as well make the most of it. "
   },
 
   {
     "imagePath": "/images/lemonLavender.jpg",
     "name": "Lemon Lavendar",
-    "price": 5.55,
+    "price": 5.00,
     "description": "Try our new roll! We combined lemon and lavender to produce this fragrant cake, melting into the chewy flesh of the cinnamon roll, all topped with that sweet drizzle of icing…it all blends into a single glorious, indulgent, totally non-virtuous treat. No, it’s not health food. But if you’re going to be bad, you might as well make the most of it. "
   },
 
   {
     "imagePath": "/images/mapleApplePecan.jpg",
     "name": "Maple Apple Pecan",
-    "price": 5.55,
+    "price": 5.00,
     "description": "Maple, apple and pecan! It keeps going!! The smoky pecan, melting into the chewy flesh of the cinnamon roll, all topped with that sweet drizzle of maple icing…it all blends into a single glorious, indulgent, totally non-virtuous treat. No, it’s not health food. But if you’re going to be bad, you might as well make the most of it. "
   },
 
   {
     "imagePath": "/images/original.jpg",
     "name": "Original",
-    "price": 5.55,
+    "price": 5.00,
     "description": "Enjoy the original cinnamon roll! Our basic cinnamon roll, all topped with that sweet drizzle of icing…it all blends into a single glorious, indulgent, totally non-virtuous treat. No, it’s not health food. But if you’re going to be bad, you might as well make the most of it. "
   },
 
   {
     "imagePath": "/images/originalGlutenFree.jpg",
     "name": "Original (Gluten-Free)",
-    "price": 5.55,
+    "price": 5.00,
     "description": "We have gluten-free options too, don;t you worry! Enjoy the original cinnamon roll! Our basic cinnamon roll, all topped with that sweet drizzle of icing…it all blends into a single glorious, indulgent, totally non-virtuous treat. No, it’s not health food. But if you’re going to be bad, you might as well make the most of it. "
   },
 
   {
     "imagePath": "/images/originalVegan.jpg",
     "name": "Original (Vegan)",
-    "price": 5.55,
+    "price": 5.00,
     "description": "We see all you vegans out there! Enjoy the original cinnamon roll now vegan! Our basic cinnamon roll, all topped with that sweet drizzle of icing…it all blends into a single glorious, indulgent, totally non-virtuous treat. No, it’s not health food. But if you’re going to be bad, you might as well make the most of it. "
   },
 
   {
     "imagePath": "/images/pumpkinSpice.jpg",
     "name": "Pumpkin Spice",
-    "price": 5.55,
+    "price": 5.00,
     "description": "It's Fall Y'all! Get that pumpkin spice going, melting into the chewy flesh of the cinnamon roll, all topped with that sweet drizzle of icing…it all blends into a single glorious, indulgent, totally non-virtuous treat. No, it’s not health food. But if you’re going to be bad, you might as well make the most of it. "
   },
 
   {
     "imagePath": "/images/strawberryRhubarb.jpg",
     "name": "Strawberry Rhubarb",
-    "price": 5.55,
+    "price": 5.00,
     "description": "Strawberry and rhubarb cinnamon rolls, combined into your NEW favorite! Fresh strawberries, melting into the chewy flesh of the cinnamon roll, all topped with that sweet drizzle of icing…it all blends into a single glorious, indulgent, totally non-virtuous treat. No, it’s not health food. But if you’re going to be bad, you might as well make the most of it. "
   },
 
   {
     "imagePath": "/images/walnut.jpg",
     "name": "Walnut",
-    "price": 5.55,
+    "price": 5.00,
     "description": "Walnut and cinnamon rolls, combined into your NEW favorite! The smoky walnut, melting into the chewy flesh of the cinnamon roll, all topped with that sweet drizzle of icing…it all blends into a single glorious, indulgent, totally non-virtuous treat. No, it’s not health food. But if you’re going to be bad, you might as well make the most of it. "
   }
 ]

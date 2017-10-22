@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 import Products from './products.json';
+import HomePage from './HomePage';
 import ProductDetails from './ProductDetails';
 
 import './ShoppingCart.css';
@@ -22,6 +23,7 @@ class ShoppingCart extends Component {
   end() {
     alert("This is the end of my prototype! You shopping cart is being reset! Better luck buying your cinnamon rolls next time!");
     localStorage.clear();
+    ReactDOM.render(<HomePage displayPage={HomePage} displayPageKey="HomePage"/>, document.getElementById('app'));
   }
 
   render() {
@@ -98,7 +100,7 @@ class ItemPreview extends Component {
 
   showActionButton() {
     if (this.props.quantity && this.props.itemTotal) {
-      return (<button className="itemRemove" onClick={() => this.removeFromCart(this.props) }>X</button>)
+      return (<button className="itemRemove" onClick={() => this.removeFromCart(this.props) }>x</button>)
     }
   }
 
