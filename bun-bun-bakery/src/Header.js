@@ -47,13 +47,6 @@ class Header extends Component {
     ReactDOM.render(<ContactUs displayPage="ContactUs" />, document.getElementById('app'));
   }
 
-  goShoppingCart() {
-    this.setState({
-      displayPage: 'ShoppingCart'
-    });
-    ReactDOM.render(<ShoppingCart displayPage="ShoppingCart" />, document.getElementById('app'));
-  }
-
   render() {
     return (
       <div className="navContainer">
@@ -81,8 +74,8 @@ class Header extends Component {
             <li><a className={this.isActiveClass('ContactUs')} onClick={() => this.goContactUs() }>Contact Us</a></li>
 
             <li><a>
-              <ReactHoverObserver>
-                <ShoppingCartSvg />
+              <ReactHoverObserver hoverOffDelayInMs={400}>
+                <ShoppingCartSvg displayPage={this.props.displayPage}/>
               </ReactHoverObserver>
 
               <span id="shoppingCartValue">{this.shoppingCartQuantity()}</span></a>
@@ -95,14 +88,14 @@ class Header extends Component {
 }
 
 const ShoppingCartSvg = ({isHovering = false}) => (
-  isHovering ? <Preview /> : <Shoppingcarticon />
+  isHovering ? <Preview /> : <Preview />
 );
 
 const Preview = ({isHovering = false}) => (
-<div>
-  <Shoppingcarticon />
-  <ShoppingCart />
-</div>
+  <div>
+    <Shoppingcarticon />
+    <ShoppingCart />
+  </div>
 );
 
 const Shoppingcarticon = ({isHovering = false}) => (
