@@ -95,11 +95,14 @@ class Header extends Component {
 }
 
 const ShoppingCartSvg = ({isHovering = false}) => (
-  isHovering ? <Preview /> : <Preview />
+  isHovering ? <Preview /> : <Shoppingcarticon />
 );
 
 const Preview = ({isHovering = false}) => (
+<div>
+  <Shoppingcarticon />
   <ShoppingCart />
+</div>
 );
 
 const Shoppingcarticon = ({isHovering = false}) => (
