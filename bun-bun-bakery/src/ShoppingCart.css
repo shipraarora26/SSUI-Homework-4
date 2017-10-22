@@ -7,9 +7,10 @@
   border: solid;
   border-radius: 10px;
   background: gray;
-  min-width: 400px;
+  min-width: 498px;
   max-width: 600px;
-  height: 60%;
+  min-height: 10%;
+  max-height: 60%;
   text-align: center;
 }
 
