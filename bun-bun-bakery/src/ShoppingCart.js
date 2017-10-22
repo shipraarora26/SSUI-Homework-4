@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 import Products from './products.json';
-// import ProductPreview from './ProductPreview';
 import Header from './Header'
 import ProductDetails from './ProductDetails';
 import HomePage from './HomePage';
@@ -45,7 +44,7 @@ class ShoppingCart extends Component {
             <span className="total">Order Total: ${this.getOrderTotal()}</span>
             <button className="checkout" onClick={() => this.end()}>Checkout</button>
             <div className="shoppingCartItems" id="checkoutCart">
-              {arr.map(item => <ItemPreview key={id++} name={item.name} price={item.price} imagePath={item.imagePath} description={item.description} quantity={localStorage.getItem(item.name)} itemTotal={(item.price * localStorage.getItem(item.name))}/>)}
+              {arr.map(item => <ItemPreview displayPage={this.props.displayPage} key={id++} name={item.name} price={item.price} imagePath={item.imagePath} description={item.description} quantity={localStorage.getItem(item.name)} itemTotal={(item.price * localStorage.getItem(item.name))}/>)}
             </div>
           </div>
   }
@@ -109,15 +108,15 @@ class ItemPreview extends Component {
   }
 
   render() {
-    return <div className="flavor">
-            <div onClick={() => this.goProductDetails(this.props)}>
-              <img className="flavorImg" src={this.props.imagePath} alt=""></img>
+    return <div className="shoppingCartFlavor" onClick={() => this.goProductDetails(this.props)}>
+             <div className="leftDes">
+              <img className="ShoppingCartFlavorImg" src={this.props.imagePath} alt=""></img>
+             </div>
               {this.props.name}<br></br>
               <span>{this.props.price}</span>
               <div id="checkOutTotals">
                 {this.showCheckOutTotalsIfExists()}
               </div>
-            </div>
             {this.showActionButton()}
          </div>
   }
