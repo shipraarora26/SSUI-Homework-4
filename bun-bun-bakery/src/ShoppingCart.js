@@ -40,10 +40,8 @@ class ShoppingCart extends Component {
 
     var id = 0
     return <div className="shoppingCartContainer">
-            <div className="shoppingCartContainerHeader">
-              <span className="total">Order Total: ${this.getOrderTotal()}</span>
-              <button className="checkout" onClick={() => this.end()}>Checkout</button>
-            </div>
+            <span className="total">Order Total: ${this.getOrderTotal()}</span>
+            <button className="checkout" onClick={() => this.end()}>Checkout</button>
 
             <div className="shoppingCartItems" id="checkoutCart">
               {arr.map(item => <ItemPreview displayPage={this.props.displayPage} key={id++} name={item.name} price={item.price} imagePath={item.imagePath} description={item.description} quantity={localStorage.getItem(item.name)} itemTotal={(item.price * localStorage.getItem(item.name))}/>)}
@@ -111,9 +109,9 @@ class ItemPreview extends Component {
               <img src={this.props.imagePath} alt=""></img>
              </div>
              <div className="shoppingCartFlavorInfo">
-              <span className="itemPrice">${this.showCheckOutTotalsIfExists()}</span>
               <span className="itemName">{this.props.name}</span>
               <span className="itemQuantity">{this.props.quantity} <small>qty</small></span>
+              <span className="itemPrice">Subtotal: ${this.showCheckOutTotalsIfExists()}</span>
              </div>
           </div>
   }
