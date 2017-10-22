@@ -29,6 +29,10 @@ li { display: inline; }
 	transition: all 0.2s linear;
 }
 
+.navContainer div {
+	display: inherit;
+}
+
 .navContainer .activeNav {
 	border-bottom: 1px solid white;
 	padding-bottom: 2px;
@@ -57,7 +61,7 @@ span#shoppingCartValue {
 }
 
 .shoppingCartIcon {
-   width: 30px;
+  width: 30px;
   height: 31px;
   margin-bottom: 5px;
   vertical-align: middle;

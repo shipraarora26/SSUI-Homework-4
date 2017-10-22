@@ -77,16 +77,18 @@ class ProductPreview extends Component {
   }
 
   render() {
-    return <div className="flavor">
+    return <div className="shoppingCartflavor">
               <div onClick={() => this.goProductDetails(this.props)}>
-                <img className="flavorImg" src={this.props.imagePath} alt=""></img>
+                <div className="leftDes">
+                  <img className="shoppingCartflavorImg" src={this.props.imagePath} alt=""></img>
+                </div>
+            
                 {this.props.name}<br></br>
                 <span>{this.props.price}</span>
-                <div id="checkOutTotals">
-                  {this.showCheckOutTotalsIfExists()}
+                <div id="checkOutTotals">]
+                  {this.showActionButton()}
                 </div>
               </div>
-              {this.showActionButton()}
            </div>
   }
 }
