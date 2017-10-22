@@ -5,7 +5,7 @@ class ContactUs extends Component {
   render() {
     return (
         <div className="ContactUsContainer">
-            <Header displayPage="ContactUs" />
+            <Header displayPage={ContactUs} displayPageKey="ContactUs"/>
 	 		<h1>Contact Us</h1>
 
 		    <div className="contactUs">

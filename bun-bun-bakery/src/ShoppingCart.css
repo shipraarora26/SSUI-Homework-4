@@ -1,0 +1,80 @@
+/*Shopping Cart Page*/
+.shoppingCartContainer {
+  display: block !important;
+  float: right;
+  position: fixed;
+  overflow: scroll;
+  border: solid;
+  border-radius: 10px;
+  background: gray;
+  min-width: 400px;
+  max-width: 600px;
+  height: 60%;
+  text-align: center;
+}
+
+.checkout {
+  cursor: pointer;
+}
+
+.shoppingCartItems {
+  padding: 10px;
+  text-align: center;
+  font-family: AvenirNext-Regular;
+  color: white;
+  font-size: 18px;
+  cursor: auto;
+}
+
+.shoppingCartContainerHeader {
+  display: flow-root !important;
+  cursor: default !important;
+}
+
+.shoppingCartFlavor {
+  margin: 5px;
+  border: solid 1px;
+  display: inline-block !important;
+  min-width: 300px;
+  overflow: hidden;
+}
+
+.shoppingCartFlavor span {
+  height: 30px;
+  line-height: 30px;
+}
+
+.leftDes {
+  width: 50px;
+}
+
+.shoppingCartFlavorInfo {
+  margin-top: 20px;
+  margin-left: 10px;
+  text-align: left;
+  width: 35%;
+  float: left;
+}
+
+.shoppingCartFlavorImg {
+  cursor: pointer;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 125px;
+  width: 50%;
+  float: left;
+  overflow: hidden;
+}
+
+.shoppingCartFlavorImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.itemRemove {
+  cursor: pointer;
+  position: relative;
+  float: right;
+  z-index: 100;
+}

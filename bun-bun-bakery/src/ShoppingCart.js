@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 import Products from './products.json';
-import Header from './Header'
 import ProductDetails from './ProductDetails';
-import HomePage from './HomePage';
+
+import './ShoppingCart.css';
 
 class ShoppingCart extends Component {
   getOrderTotal() {
@@ -22,7 +22,6 @@ class ShoppingCart extends Component {
   end() {
     alert("This is the end of my prototype! You shopping cart is being reset! Better luck buying your cinnamon rolls next time!");
     localStorage.clear();
-    //ReactDOM.render(<HomePage displayPage="HomePage" />, document.getElementById('app'));
   }
 
   render() {
@@ -40,9 +39,12 @@ class ShoppingCart extends Component {
     });
 
     var id = 0
-    return <div className="ShoppingCartContainer">
-            <span className="total">Order Total: ${this.getOrderTotal()}</span>
-            <button className="checkout" onClick={() => this.end()}>Checkout</button>
+    return <div className="shoppingCartContainer">
+            <div className="shoppingCartContainerHeader">
+              <span className="total">Order Total: ${this.getOrderTotal()}</span>
+              <button className="checkout" onClick={() => this.end()}>Checkout</button>
+            </div>
+
             <div className="shoppingCartItems" id="checkoutCart">
               {arr.map(item => <ItemPreview displayPage={this.props.displayPage} key={id++} name={item.name} price={item.price} imagePath={item.imagePath} description={item.description} quantity={localStorage.getItem(item.name)} itemTotal={(item.price * localStorage.getItem(item.name))}/>)}
             </div>
@@ -81,7 +83,8 @@ class ItemPreview extends Component {
   }
 
   updateItemQuantity() {
-    ReactDOM.render(<HomePage />, document.getElementById('app'));
+    var Target = this.props.displayPage
+    ReactDOM.render(<Target displayPage={Target} displayPageKey="{Target}" />, document.getElementById('app'));
   }
 
   goProductDetails(item) {
@@ -91,34 +94,28 @@ class ItemPreview extends Component {
 
   showCheckOutTotalsIfExists() {
     if (this.props.quantity && this.props.itemTotal) {
-      return (<div>
-                <small>
-                  <p id="itemQuantity">Items: {this.props.quantity}</p>
-                  <p id="itemTotal">Total: {this.props.itemTotal}</p>
-                </small>
-              </div>
-              )
+      return (this.props.itemTotal)
     }
   }
 
   showActionButton() {
     if (this.props.quantity && this.props.itemTotal) {
-      return (<button onClick={() => this.removeFromCart(this.props) }>Remove From Cart</button>)
+      return (<button className="itemRemove" onClick={() => this.removeFromCart(this.props) }>X</button>)
     }
   }
 
   render() {
-    return <div className="shoppingCartFlavor" onClick={() => this.goProductDetails(this.props)}>
-             <div className="leftDes">
-              <img className="ShoppingCartFlavorImg" src={this.props.imagePath} alt=""></img>
-             </div>
-              {this.props.name}<br></br>
-              <span>{this.props.price}</span>
-              <div id="checkOutTotals">
-                {this.showCheckOutTotalsIfExists()}
-              </div>
+    return <div className="shoppingCartFlavor">
             {this.showActionButton()}
-         </div>
+             <div className="shoppingCartFlavorImg" onClick={() => this.goProductDetails(this.props)}>
+              <img src={this.props.imagePath} alt=""></img>
+             </div>
+             <div className="shoppingCartFlavorInfo">
+              <span className="itemPrice">${this.showCheckOutTotalsIfExists()}</span>
+              <span className="itemName">{this.props.name}</span>
+              <span className="itemQuantity">{this.props.quantity} <small>qty</small></span>
+             </div>
+          </div>
   }
 }
 

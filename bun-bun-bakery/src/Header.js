@@ -11,7 +11,7 @@ import './Header.css';
 
 class Header extends Component {
   isActiveClass(target) {
-    if (this.props.displayPage === target) {
+    if (this.props.displayPageKey === target) {
       return 'activeNav'
     }
   }
@@ -30,21 +30,21 @@ class Header extends Component {
     this.setState({
       displayPage: 'HomePage'
     });
-    ReactDOM.render(<HomePage displayPage="HomePage" />, document.getElementById('app'));
+    ReactDOM.render(<HomePage displayPage={HomePage} displayPageKey="HomePage"/>, document.getElementById('app'));
   }
 
   goProductMenu() {
     this.setState({
       displayPage: 'ProductMenu'
     });
-    ReactDOM.render(<ProductMenu displayPage="ProductMenu" />, document.getElementById('app'));
+    ReactDOM.render(<ProductMenu displayPage={ProductMenu} displayPageKey="ProductMenu"/>, document.getElementById('app'));
   }
 
   goContactUs() {
     this.setState({
       displayPage: 'ContactUs'
     });
-    ReactDOM.render(<ContactUs displayPage="ContactUs" />, document.getElementById('app'));
+    ReactDOM.render(<ContactUs displayPage={ContactUs} displayPageKey="ContactUs"/>, document.getElementById('app'));
   }
 
   render() {
@@ -69,9 +69,9 @@ class Header extends Component {
           </svg>
 
           <div className="navLinksRight">
-            <li><a className={this.isActiveClass('HomePage')} onClick={() => this.goHome() }>Home</a></li>
-            <li><a className={this.isActiveClass('ProductMenu')} onClick={() => this.goProductMenu() }>Menu</a></li>
-            <li><a className={this.isActiveClass('ContactUs')} onClick={() => this.goContactUs() }>Contact Us</a></li>
+            <li><a className={this.isActiveClass("HomePage")} onClick={() => this.goHome() }>Home</a></li>
+            <li><a className={this.isActiveClass("ProductMenu")} onClick={() => this.goProductMenu() }>Menu</a></li>
+            <li><a className={this.isActiveClass("ContactUs")} onClick={() => this.goContactUs() }>Contact Us</a></li>
 
             <li><a>
               <ReactHoverObserver hoverOffDelayInMs={400}>
@@ -88,7 +88,7 @@ class Header extends Component {
 }
 
 const ShoppingCartSvg = ({isHovering = false, displayPage}) => (
-  isHovering ? <Preview displayPage={displayPage} /> : <Preview displayPage={displayPage} />
+  isHovering ? <Preview displayPage={displayPage} /> : <Shoppingcarticon displayPage={displayPage} />
 );
 
 const Preview = ({isHovering = false, displayPage}) => (

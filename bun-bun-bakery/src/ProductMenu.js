@@ -17,11 +17,11 @@ class ProductMenu extends Component {
 
     var id = 0
     return <div className="productMenu">
-    			  <Header displayPage="ProductMenu" />
+            <Header displayPage={ProductMenu} displayPageKey="ProductMenu"/>
             <div className="shoppingCartItems">
-    			     {arr.map(item => <ProductPreview key={id++} name={item.name} price={item.price} imagePath={item.imagePath} description={item.description}/>)}
+               {arr.map(item => <ProductPreview key={id++} name={item.name} price={item.price} imagePath={item.imagePath} description={item.description}/>)}
             </div>
-    	   </div>
+         </div>
   }
 }
 
