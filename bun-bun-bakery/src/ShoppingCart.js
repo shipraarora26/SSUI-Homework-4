@@ -5,6 +5,22 @@ import Products from './products.json';
 import HomePage from './HomePage';
 import ProductDetails from './ProductDetails';
 
+import bacon_image from './images/bacon.jpg';
+import birthday_image from './images/birthday.jpg';
+import blackberry_image from './images/blackberry.jpg';
+import buttermilk_image from './images/buttermilk.jpg';
+import caramelPecan_image from './images/caramelPecan.jpg';
+import carrotCake_image from './images/carrotCake.jpg';
+import cranberry_image from './images/cranberry.jpg';
+import lemonLavender_image from './images/lemonLavender.jpg';
+import mapleApplePecan_image from './images/mapleApplePecan.jpg';
+import original_image from './images/original.jpg';
+import originalGlutenFree_image from './images/originalGlutenFree.jpg';
+import originalVegan_image from './images/originalVegan.jpg';
+import pumpkinSpice_image from './images/pumpkinSpice.jpg';
+import strawberryRhubarb_image from './images/strawberryRhubarb.jpg';
+import walnut_image from './images/walnut.jpg';
+
 import './ShoppingCart.css';
 
 class ShoppingCart extends Component {
@@ -53,6 +69,28 @@ class ShoppingCart extends Component {
 }
 
 class ItemPreview extends Component {
+    constructor(props) {
+    super(props);
+
+    this.state = {
+      bacon_image: bacon_image,
+      birthday_image: birthday_image,
+      blackberry_image: blackberry_image,
+      buttermilk_image: buttermilk_image,
+      caramelPecan_image: caramelPecan_image,
+      carrotCake_image: carrotCake_image,
+      cranberry_image: cranberry_image,
+      lemonLavender_image: lemonLavender_image,
+      mapleApplePecan_image: mapleApplePecan_image,
+      original_image: original_image,
+      originalGlutenFree_image: originalGlutenFree_image,
+      originalVegan_image: originalVegan_image,
+      pumpkinSpice_image: pumpkinSpice_image,
+      strawberryRhubarb_image: strawberryRhubarb_image,
+      walnut_image: walnut_image
+    };
+  }
+  
   removeFromCart(item) {
     var quantity
 
@@ -105,10 +143,12 @@ class ItemPreview extends Component {
   }
 
   render() {
+    var a = this.props.imagePath;
+
     return <div className="shoppingCartFlavor">
             {this.showActionButton()}
              <div className="shoppingCartFlavorImg" onClick={() => this.goProductDetails(this.props)}>
-              <img src={this.props.imagePath} alt=""></img>
+              <img src={this.state[a]} alt=""></img>
              </div>
              <div className="shoppingCartFlavorInfo">
               <span className="itemName">{this.props.name}</span>
