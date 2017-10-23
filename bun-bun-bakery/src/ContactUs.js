@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Header from './Header';
 
+import map_image from './images/map.png';
+
 class ContactUs extends Component {
   render() {
     return (
@@ -21,7 +23,7 @@ class ContactUs extends Component {
 		      <span>Sat-Sun: 12PM - 4PM</span>
 		    </div>
 
-	     	<img className="map" src="/images//map.png" alt=""></img>
+	     	<img className="map" src={map_image} alt=""></img>
         </div>
     );
   }
