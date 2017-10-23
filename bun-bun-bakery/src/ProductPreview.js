@@ -81,7 +81,7 @@ class ProductPreview extends Component {
             <div onClick={() => this.goProductDetails(this.props)}>
               <img className="flavorImg" src={this.props.imagePath} alt=""></img>
               {this.props.name}<br></br>
-              <span>${this.props.price}</span>
+              <span>$ {this.props.price}</span>
               <div id="checkOutTotals">
                 {this.showCheckOutTotalsIfExists()}
               </div>

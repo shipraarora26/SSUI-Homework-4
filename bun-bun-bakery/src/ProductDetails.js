@@ -37,7 +37,7 @@ class ProductDetails extends Component {
           <div className="flavorDes">
             <div className="leftDes">
               <img className="flavorDesImg" src={this.props.imagePath} alt=""></img>
-              <span>{this.props.price}</span>
+              <span>$ {this.props.price}</span>
               <button onClick={() => this.addToCart(this.props)}>Add to Cart</button>
             </div>
 
