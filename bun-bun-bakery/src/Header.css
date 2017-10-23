@@ -16,6 +16,7 @@ li { display: inline; }
 
 .navContainer a {
 	text-decoration: none;
+	padding: 8px 12px;
 	margin: 0 30px;
 	font-family: AvenirNext-Regular;
 	font-size: 17px;
@@ -23,23 +24,14 @@ li { display: inline; }
 	line-height: 60px;
 }
 
-/*.navContainer a:hover {
-	text-shadow: 2px 2px gray;
-	transition: all 0.2s linear;
-}*/
-
 .navContainer div {
 	display: inherit;
 }
 
 .navContainer a:hover, .activeNav {
-  padding: 8px 12px;
-  border: 1px solid gray;
   border-radius: 3px;
   background-color: gray;
 
-  text-shadow: 1px 1px gray;
-  transition: all 0.2s linear;
   text-decoration: none;
 }
 
