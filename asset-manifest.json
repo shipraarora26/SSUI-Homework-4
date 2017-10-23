@@ -1,6 +1,21 @@
 {
   "main.css": "static/css/main.fafa2588.css",
   "main.css.map": "static/css/main.fafa2588.css.map",
-  "main.js": "static/js/main.a0b00033.js",
-  "main.js.map": "static/js/main.a0b00033.js.map"
+  "main.js": "static/js/main.1c646e0c.js",
+  "main.js.map": "static/js/main.1c646e0c.js.map",
+  "static/media/bacon.jpg": "static/media/bacon.09dda56c.jpg",
+  "static/media/birthday.jpg": "static/media/birthday.b55299ec.jpg",
+  "static/media/blackberry.jpg": "static/media/blackberry.adea3fe1.jpg",
+  "static/media/buttermilk.jpg": "static/media/buttermilk.7c362ad0.jpg",
+  "static/media/caramelPecan.jpg": "static/media/caramelPecan.4c7dc01f.jpg",
+  "static/media/carrotCake.jpg": "static/media/carrotCake.49cfe497.jpg",
+  "static/media/cranberry.jpg": "static/media/cranberry.0066b7ac.jpg",
+  "static/media/lemonLavender.jpg": "static/media/lemonLavender.f7659628.jpg",
+  "static/media/mapleApplePecan.jpg": "static/media/mapleApplePecan.a7510712.jpg",
+  "static/media/original.jpg": "static/media/original.81b75b4e.jpg",
+  "static/media/originalGlutenFree.jpg": "static/media/originalGlutenFree.f63e2be5.jpg",
+  "static/media/originalVegan.jpg": "static/media/originalVegan.d18a4e6f.jpg",
+  "static/media/pumpkinSpice.jpg": "static/media/pumpkinSpice.9f1fb2cc.jpg",
+  "static/media/strawberryRhubarb.jpg": "static/media/strawberryRhubarb.d766d758.jpg",
+  "static/media/walnut.jpg": "static/media/walnut.67f20aa3.jpg"
 }
